@@ -1,23 +1,29 @@
 <template>
 
-    <nav class="navbar navbar-toggleable-md bg-info navbar-inverse">
+    <b-navbar toggleable="md" type="dark" style="height:10%; background:#5f4238">
 
-        <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Training</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                </div>
-            </div>
-        </div>
+        <b-navbar-brand href="#">OATS</b-navbar-brand>
 
+        <b-navbar-toggle target="drawer"></b-navbar-toggle>
 
-    </nav>
+        <b-collapse id="drawer">
+
+            <b-navbar-nav>
+                <b-nav-item href="#">About</b-nav-item>
+                <b-nav-item href="#">Download</b-nav-item>
+            </b-navbar-nav>
+
+        </b-collapse>
+
+        <b-navbar-nav class="ml-auto">
+
+            <b-nav-item class="px-4">About</b-nav-item>
+            <b-nav-item class="px-4">Download</b-nav-item>
+            <b-nav-item class="px-4">Catelog</b-nav-item>
+
+        </b-navbar-nav>
+
+    </b-navbar>
 
 </template>
 

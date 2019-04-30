@@ -4,13 +4,18 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
+
+    <Nav-Bar />
+
     <router-view/>
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav'
 export default {
   components: {
+    'Nav-Bar': Nav
   }
 }
 </script>

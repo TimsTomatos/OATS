@@ -132,4 +132,8 @@ export default {
         font-size: 14px;
     }
 
+    .card-img-top {
+        max-height: 15rem;
+    }
+
 </style>

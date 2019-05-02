@@ -2,21 +2,21 @@
     
     <div class="content">
 
-        <b-container>
+        <v-container>
 
-            <b-row>
+            <v-layout column>
 
-                <b-col sm="12" class="text-center">
+                <v-flex xs12 class="text-center">
                     <p class="display-3">The World of Birds</p>
                     <p class="h2">Fast Integration for Ornitholgy</p>
-                </b-col>
+                </v-flex>
                 
-                <div class="col-sm-12">
+                <v-flex xs12>
 
-                  <b-row>
+                  <v-layout>
                       <template v-for="items in cards">
 
-                      <b-col sm="12" md="4" :key="items.title"> <!-- Card One -->
+                      <v-flex xs12 md4 :key="items.title"> <!-- Card One -->
                       
                         <b-card
                             class="mb-2"
@@ -30,58 +30,58 @@
 
                         </b-card>
 
-                      </b-col>
+                      </v-flex>
                       
                       </template>
 
-                    </b-row>
+                    </v-layout>
 
-                  </div>
+                  </v-flex>
 
-                  <b-col sm="12" class="my-5 text-center">
+                  <v-flex xs12 class="my-5 text-center">
                     <p class="display-3">Array of Catelog</p>
                     <p class="h2">Growing Catelog of Birds to Identify</p>
-                  </b-col>
+                  </v-flex>
 
-                  <b-col sm="12">
+                  <v-flex xs12>
 
-                      <b-row>
+                      <v-layout>
                       
                         <template v-for="items in birds">
 
-                        <b-col sm="12" md="4" :key="items.name"> <!-- Card One -->
+                        <v-flex xs12 md4 :key="items.name"> <!-- Card One -->
                         
                             <b-card
                                 img-fluid
                                 img-top
-                                class="mb-2"
+                                class="mb-2 mx-4"
                                 :img-src="items.img"
                                 :title="items.name"
                                 :sub-title="items.scientificName"
                             >
                                 <b-card-text>
-                                    <b-row>
-                                        <b-col class="font-weight-light">
+                                    <v-layout>
+                                        <v-flex class="font-weight-light">
                                             <span class="stats">
                                              <font-awesome-icon icon="ruler" />
                                              {{items.stats.length}}
                                             </span>
-                                        </b-col>
+                                        </v-flex>
 
-                                        <b-col class="font-weight-light"> 
+                                        <v-flex class="font-weight-light"> 
                                             <span class="stats">
                                              <font-awesome-icon icon="digital-tachograph" />
                                              {{items.stats.speed}}
                                             </span>
-                                        </b-col>
+                                        </v-flex>
 
-                                        <b-col class="font-weight-light">
+                                        <v-flex class="font-weight-light">
                                             <span class="stats">
                                              <font-awesome-icon icon="hourglass" />
                                              {{items.stats.lifespan}}
                                             </span>
-                                        </b-col>
-                                    </b-row>
+                                        </v-flex>
+                                    </v-layout>
 
                                     <p class="text-truncate">{{items.content}}</p>
 
@@ -89,17 +89,17 @@
 
                             </b-card>
 
-                        </b-col>
+                        </v-flex>
                         
                         </template>
 
-                    </b-row>
+                    </v-layout>
 
-                  </b-col>
+                  </v-flex>
 
-            </b-row>
+            </v-layout>
 
-        </b-container>
+        </v-container>
 
 
     </div>

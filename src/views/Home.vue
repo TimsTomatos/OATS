@@ -1,17 +1,21 @@
 <template>
   <div class="home">
 
-    <div id="intro" class="jumbotron jumbotron-fluid bg-success my-0">
-
-      <b-container class="text-center">
-
-        <img :src="require('@/assets/Oats.svg')" alt="" id="logo">
-
-        <p class="pt-4 display-3 text-white font-weight-lighter">Ornith Audio Tune Software</p>
-
-      </b-container>
-
-    </div>
+    <v-parallax src="https://cdn.discordapp.com/attachments/567223608645124099/573407161061867530/4_Protecting-The-Rainforest.png" max-height="1024px">
+    
+            <v-layout align-center column justify-center fill-height>
+       
+                <v-flex xs12>
+                    <v-img :src="require('@/assets/Oats.svg')" class="mt-3" max-height="300" contain> </v-img>
+                    <v-layout column justify-center align-center>
+                        <span class="display-2 font-weight-heavy mt-3">OATS</span>
+                        <span class="display-1 font-weight-light mt-2 text-xs-center">Ornith Audio Tuning System</span>       
+                    </v-layout>   
+                </v-flex>
+        
+            </v-layout>
+    
+      </v-parallax>
 
     <Home msg="Welcome to Your Vue.js App"/>
 
